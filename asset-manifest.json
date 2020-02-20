@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/portfolio/project/graphql-checklist/static/js/main.5357da40.chunk.js",
-    "main.js.map": "/portfolio/project/graphql-checklist/static/js/main.5357da40.chunk.js.map",
-    "runtime-main.js": "/portfolio/project/graphql-checklist/static/js/runtime-main.9b698c5c.js",
-    "runtime-main.js.map": "/portfolio/project/graphql-checklist/static/js/runtime-main.9b698c5c.js.map",
-    "static/js/2.aa82c001.chunk.js": "/portfolio/project/graphql-checklist/static/js/2.aa82c001.chunk.js",
-    "static/js/2.aa82c001.chunk.js.map": "/portfolio/project/graphql-checklist/static/js/2.aa82c001.chunk.js.map",
-    "index.html": "/portfolio/project/graphql-checklist/index.html",
-    "precache-manifest.1b9e8e770288e4e8267b0b3f945ddbf3.js": "/portfolio/project/graphql-checklist/precache-manifest.1b9e8e770288e4e8267b0b3f945ddbf3.js",
-    "service-worker.js": "/portfolio/project/graphql-checklist/service-worker.js",
-    "static/js/2.aa82c001.chunk.js.LICENSE.txt": "/portfolio/project/graphql-checklist/static/js/2.aa82c001.chunk.js.LICENSE.txt"
+    "main.js": "/graphql-checklist/static/js/main.5357da40.chunk.js",
+    "main.js.map": "/graphql-checklist/static/js/main.5357da40.chunk.js.map",
+    "runtime-main.js": "/graphql-checklist/static/js/runtime-main.9da67f97.js",
+    "runtime-main.js.map": "/graphql-checklist/static/js/runtime-main.9da67f97.js.map",
+    "static/js/2.aa82c001.chunk.js": "/graphql-checklist/static/js/2.aa82c001.chunk.js",
+    "static/js/2.aa82c001.chunk.js.map": "/graphql-checklist/static/js/2.aa82c001.chunk.js.map",
+    "index.html": "/graphql-checklist/index.html",
+    "precache-manifest.d2a503478255972958b77d7d45ecf606.js": "/graphql-checklist/precache-manifest.d2a503478255972958b77d7d45ecf606.js",
+    "service-worker.js": "/graphql-checklist/service-worker.js",
+    "static/js/2.aa82c001.chunk.js.LICENSE.txt": "/graphql-checklist/static/js/2.aa82c001.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9b698c5c.js",
+    "static/js/runtime-main.9da67f97.js",
     "static/js/2.aa82c001.chunk.js",
     "static/js/main.5357da40.chunk.js"
   ]
