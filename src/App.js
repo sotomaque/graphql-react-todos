@@ -110,7 +110,7 @@ function App() {
     },
     {
       target: ".my-third-step",
-      content: "To mark an item as \'done\' simply double click the item in the list"
+      content: "To mark an item as 'done' simply double click the item in the list"
     },
     {
       target: ".my-fourth-step",
