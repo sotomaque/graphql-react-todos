@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "79e249c77e34a77a22f740141324f312",
+    "revision": "28a040f368029d7ef8ae7052cf121a39",
     "url": "/graphql-react-todos/index.html"
   },
   {
