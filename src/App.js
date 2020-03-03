@@ -1,7 +1,6 @@
 import React from 'react';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
-import Joyride from 'react-joyride';
 
 // add todos
 const ADD_TODO = gql`
@@ -97,39 +96,18 @@ function App() {
   if (loading) return <div>loading todos...</div>
   if (error) return <div>error fetching todos</div>
 
-  const steps = [
-    {
-      target: ".my-first-step",
-      content: "Welcome to GraphQL Checklist",
-      placement: 'center',
-      disableBeacon: true
-    },
-    {
-      target: ".my-second-step",
-      content: "To add a new item to your todo list, simply type it in here, and either click on the create button or press enter"
-    },
-    {
-      target: ".my-third-step",
-      content: "To mark an item as 'done' simply double click the item in the list"
-    },
-    {
-      target: ".my-fourth-step",
-      content: "To erase an item from your list, click the red 'X'",
-      isLastStep: true
-    }
-  ]
 
   return (
     <>
-      <Joyride steps={steps} continuous={true} showProgress={false} />
-      <div className="vh-100 code flex flex-column items-center bg-purple white pa3 fl-1 my-first-step">  
+     
+      <div className="vh-100 code flex flex-column items-center bg-purple white pa3 fl-1">  
             <h1 className="f2-l">GraphQL Checklist 
               <span role="img" aria-label="Checkmark">✅</span>
             </h1>
             {/* Todo Form  */}
             <form onSubmit={handleAddTodo} className="mb3">
               <input
-                className="pa2 f4 b--dashed my-second-step"
+                className="pa2 f4 b--dashed"
                 type="text"
                 placeholder="Add A Todo"
                 onChange={event => setTodoText(event.target.value)}
@@ -140,17 +118,18 @@ function App() {
                 type="submit">Create</button>
             </form>
             {/* Todos list  */}
-            <div className="flex items-center justify-center flex-column">
+            <div className="flex items-center justify-center flex-column" style={{overflow: 'scroll', width: '80vw'}}>
               {data.todos.map(todo => (
                 <p onDoubleClick={() => handleToggleTodo(todo)} key={todo.id}>
-                  <span className={`pointer list pa1 f3 ${todo.done && "strike"} my-third-step`}>
+                  <span className={`pointer list pa1 f3 ${todo.done && "strike"}`}>
                     {todo.text}
                   </span>
                   <button onClick={() => handleDeleteTodo(todo)} className="bg-transparent bn f4">
-                    <span className="red my-fourth-step">&times;</span>
+                    <span className="red">&times;</span>
                   </button>
                 </p>
               ))}
+              
             </div>
           </div>
     </>
