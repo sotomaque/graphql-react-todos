@@ -1,6 +1,8 @@
 import React from 'react';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
+import { CircularProgress } from '@material-ui/core';
+
 
 // add todos
 const ADD_TODO = gql`
@@ -59,29 +61,27 @@ function App() {
   const [deleteTodo] = useMutation(DELETE_TODO);
 
   async function handleToggleTodo({ id, done }) {
-    const data = await toggleTodo({ 
+    await toggleTodo({ 
       variables: { id, done: !done }
     });
-    // console.log('toggled todo', data);
   }
 
   async function handleAddTodo(event) {
     event.preventDefault();
     if (!todoText.trim()) return;
 
-    const data = await addTodo({ 
+    await addTodo({ 
       variables: { text: todoText },
       refetchQueries: [
         { query: GET_TODOS }
       ]
     });
-    // console.log('added todo', data);
   }
 
   async function handleDeleteTodo({ id }) {
     const isConfirmed = window.confirm('Do you want to delete this todo')
     if (isConfirmed) {
-      const data = await deleteTodo({ 
+      await deleteTodo({ 
         variables: { id },
         update: cache => {
           const prevData = cache.readQuery({ query: GET_TODOS });
@@ -89,11 +89,21 @@ function App() {
           cache.writeQuery({ query: GET_TODOS, data: { todos: newTodos }});
         }
       });
-      // console.log('deleted todo', data);
     }
   }
-
-  if (loading) return <div>loading todos...</div>
+  
+  if (loading) {
+    return (
+        <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            marginTop: 50
+        }}>
+            <CircularProgress/>
+        </div>
+    );
+  } 
   if (error) return <div>error fetching todos</div>
 
 
