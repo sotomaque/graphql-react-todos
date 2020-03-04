@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACI,kCAAmC,CACnC,iCACJ,CAEA,oBACA,YACA","file":"main.4a7186a2.chunk.css","sourcesContent":["body {\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\n::-webkit-scrollbar {\r\ndisplay: none;\r\n}\r\n  "]}
