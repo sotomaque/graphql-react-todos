@@ -62,7 +62,7 @@ function App() {
     const data = await toggleTodo({ 
       variables: { id, done: !done }
     });
-    console.log('toggled todo', data);
+    // console.log('toggled todo', data);
   }
 
   async function handleAddTodo(event) {
@@ -75,7 +75,7 @@ function App() {
         { query: GET_TODOS }
       ]
     });
-    console.log('added todo', data);
+    // console.log('added todo', data);
   }
 
   async function handleDeleteTodo({ id }) {
@@ -89,7 +89,7 @@ function App() {
           cache.writeQuery({ query: GET_TODOS, data: { todos: newTodos }});
         }
       });
-      console.log('deleted todo', data);
+      // console.log('deleted todo', data);
     }
   }
 
