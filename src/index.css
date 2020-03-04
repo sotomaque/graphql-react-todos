@@ -3,7 +3,18 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* disable scrollbar */
 ::-webkit-scrollbar {
 display: none;
 }
   
+/* disable highlighting text in list so you can double click to cross them off */
+::selection {
+    color: none;
+    background: none;
+}
+/* For Mozilla Firefox */
+::-moz-selection {
+    color: none;
+    background: none;
+}
