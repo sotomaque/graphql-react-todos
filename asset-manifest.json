@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/graphql-react-todos/static/css/main.eee1a6fc.chunk.css",
-    "main.js": "/graphql-react-todos/static/js/main.498f3b6f.chunk.js",
-    "main.js.map": "/graphql-react-todos/static/js/main.498f3b6f.chunk.js.map",
+    "main.js": "/graphql-react-todos/static/js/main.9329a21f.chunk.js",
+    "main.js.map": "/graphql-react-todos/static/js/main.9329a21f.chunk.js.map",
     "runtime-main.js": "/graphql-react-todos/static/js/runtime-main.17fc43aa.js",
     "runtime-main.js.map": "/graphql-react-todos/static/js/runtime-main.17fc43aa.js.map",
     "static/js/2.a5e0eb7d.chunk.js": "/graphql-react-todos/static/js/2.a5e0eb7d.chunk.js",
     "static/js/2.a5e0eb7d.chunk.js.map": "/graphql-react-todos/static/js/2.a5e0eb7d.chunk.js.map",
     "index.html": "/graphql-react-todos/index.html",
-    "precache-manifest.9a923099b5fc593713938731dc6fd2da.js": "/graphql-react-todos/precache-manifest.9a923099b5fc593713938731dc6fd2da.js",
+    "precache-manifest.838542b609441a27a2f58452a30feab3.js": "/graphql-react-todos/precache-manifest.838542b609441a27a2f58452a30feab3.js",
     "service-worker.js": "/graphql-react-todos/service-worker.js",
     "static/css/main.eee1a6fc.chunk.css.map": "/graphql-react-todos/static/css/main.eee1a6fc.chunk.css.map",
     "static/js/2.a5e0eb7d.chunk.js.LICENSE.txt": "/graphql-react-todos/static/js/2.a5e0eb7d.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.17fc43aa.js",
     "static/js/2.a5e0eb7d.chunk.js",
     "static/css/main.eee1a6fc.chunk.css",
-    "static/js/main.498f3b6f.chunk.js"
+    "static/js/main.9329a21f.chunk.js"
   ]
 }
